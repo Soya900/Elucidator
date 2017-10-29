@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E Commerce</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="gambar/favicon.ico" />
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav>
+				<ul class="top-nav">
+					<li class="sign-in"><a href="#">Sign in</a></li>
+					<li class="my-account"><a href="#">My Account</a></li>
+					<li class="order-status"><a href="#">Order Status</a></li>
+					<li class="help"><a href="#">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="search">
+		<div class="container">
+			<div class="logo"><a href="#"><img src="gambar\logo.png" height="73" width="137"></a></div>
+			<div class="txtbox">
+				<div class="kotak">
+					<input class="tb" type="text" name="search">
+					<a href="#" class="b"><img src="gambar/searchicon.png"> Search</a>
+				</div>
+			</div>
+			<div class="cart">
+				<div class="yourCart"><img src="gambar/cart.png">Your cart<div class="sub1">(2 items)</div></div>
+				<div class="check bold">$125.0<input type="button" name="checkout" value="Checkout"></div>
+			</div>
+			<div class="wishlist">
+				<div class="fav"><img src="gambar/fav.png" height="25" width="25"></div>
+				<div class="wish"><a href="#">Wish list</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav">
+		<div class="container">
+			<nav>
+				<ul class="mid-nav">
+					<li class="items-1"><a href="#">Computers</a></li>
+					<li class="items-2"><a href="#">Cooking</a></li>
+					<li class="items-3"><a href="#">Education</a></li>
+					<li class="items-4"><a href="#">Fiction</a></li>
+					<li class="items-5"><a href="#">Health</a></li>
+					<li class="items-6"><a href="#">Mathematics</a></li>
+					<li class="items-7"><a href="#">Medical</a></li>
+					<li class="items-8"><a href="#">Refrence</a></li>
+					<li class="items-9"><a href="#">Science</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="carousel">
+		<div class="container">
+			<div class="banner"><img src="gambar\banner.png" height="304" width="714"></div>
+			<div class="ads"><img src="gambar\ads.png" height="304" width="269"></div>
+		</div>
+	</div>
+
+	<div class="sidebar">
+		<div class="container">
+			<nav>
+				<ul class="category">
+					<li>
+						<h1 class="light">Categories</h1>
+					</li>
+					<li>
+						<div class="semibold"><a href="#" class="active">ALL</a></div>
+					</li>
+					<li>
+						<div class="semibold"><a href="#">Fiction & Literature</a></div>
+						<ul>	
+							<li class="category-4 indent"><a href="#">Children</a></li>
+							<li class="category-5 indent"><a href="#">Science Fiction</a></li>
+							<li class="category-6 indent"><a href="#">Fantasy</a></li>
+							<li class="category-7 indent"><a href="#">Mystery</a></li>
+							<li class="category-8 indent"><a href="#">Romance</a></li>
+							<li class="category-9 indent"><a href="#">Horror</a></li>
+							<li class="category-10 indent"><a href="#">Poetry</a></li>
+							<li class="category-11 indent"><a href="#">Literature</a></li>
+							<li class="category-12 indent"><a href="#">Crime</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="semibold sub"><a href="#">Non - Fiction</a></div>
+						<ul>
+							<li class="category-14 indent"><a href="#">Comic</a></li>
+							<li class="category-15 indent"><a href="#">Cook</a></li>
+							<li class="category-16 indent"><a href="#">Physology</a></li>
+							<li class="category-17 indent"><a href="#">Medical</a></li>
+							<li class="category-18 indent"><a href="#">Art</a></li>
+							<li class="category-19 indent"><a href="#">Photography</a></li>
+							<li class="category-20 indent"><a href="#">Law</a></li>
+							<li class="category-21 indent"><a href="#">History</a></li>
+							<li class="category-22 indent"><a href="#">Business</a></li>
+							<li class="category-23 indent"><a href="#">Computer</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="semibold sub"><a href="#">Other</a></div>
+						<ul>							
+							<li class="category-25 indent"><a href="#">Baby</a></li>
+							<li class="category-26 indent"><a href="#">Sex</a></li>
+							<li class="category-27 indent"><a href="#">Travel</a></li>
+							<li class="category-28 indent"><a href="#">Science</a></li>
+							<li class="category-29 indent"><a href="#">Sports</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="main">
+				<button class="tablink" onclick="opentab('bestsellers', this, 'white')" id="defaultOpen">Best Sellers</button>
+				<button class="tablink" onclick="opentab('newarrival', this, 'white')">New Arrival</button>
+				<button class="tablink" onclick="opentab('usedbook', this, 'white')">Used Book</button>
+				<button class="tablink" onclick="opentab('specialoffers', this, 'white')">Special Offers</button>
+
+				<div id="bestsellers" class="tabcontent">
+					<div class="goods">
+						<ul class="last">
+							<li class="book">
+								<a href="#">
+									<img src="gambar/book1.png">
+									<div class="judul light">The Hare With Amber Eyes</div>
+									<div class="price">$50</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#">
+									<img src="gambar/book2.png">
+									<div class="judul light">The War of<br>Arts</div>
+									<div class="price">$60</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book3.png">
+									<div class="judul light">Can Love Happen Twice?</div>
+								<div class="price">$50</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book4.png">
+									<div class="judul light">The Hare With Amber Eyes</div>
+								<div class="price">$25</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book5.png">
+									<div class="judul light">The Immortals of Meluha</div>
+								<div class="price">$80</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book6.png">
+									<div class="judul light">Life is What You Make it</div>
+								<div class="price">$200</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book7.png">
+									<div class="judul light">The War of<br>Arts</div>
+								<div class="price">$100</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book8.png">
+									<div class="judul light">Can Love Happen Twice?</div>
+								<div class="price">$210</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book9.png">
+									<div class="judul light">The Immortals of Meluha</div>
+								<div class="price">$240</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book10.png">
+									<div class="judul light">The Hare With Amber Eyes</div>
+								<div class="price">$20</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book11.png">
+									<div class="judul light">Life is What You Make it</div>
+								<div class="price">$10</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book12.png">
+									<div class="judul light">Life is What You Make it</div>
+								<div class="price">$50</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book13.png">
+									<div class="judul light">Life is What You Make it</div>
+								<div class="price">$169</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book7.png">
+									<div class="judul light">The War of<br>Arts</div>
+								<div class="price">$120</div>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#"><img src="gambar/book15.png">
+									<div class="judul light">The Immortals of Meluha</div>
+								<div class="price">$100</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="pagination">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a class="active" href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</div>
+				</div>
+
+				<div id="newarrival" class="tabcontent">
+					<h1>MA NAM MA JEFF</h1>
+				</div>
+
+				<div id="usedbook" class="tabcontent">
+					<h1>MA NAM MA JEFF</h1>
+				</div>
+
+				<div id="specialoffers" class="tabcontent">
+					<h1>MA NAM MA JEFF</h1>
+				</div>
+
+				<script type="text/javascript">
+					function opentab(tabName, elmnt, color) {
+						var i, tabcontent, tablinks;
+					    tabcontent = document.getElementsByClassName("tabcontent");
+					    for (i = 0; i < tabcontent.length; i++) {
+					        tabcontent[i].style.display = "none";
+					    }
+					    tablinks = document.getElementsByClassName("tablink");
+					    for (i = 0; i < tablinks.length; i++) {
+					        tablinks[i].style.backgroundColor = "";
+					    }
+					    document.getElementById(tabName).style.display = "block";
+					    elmnt.style.backgroundColor = color;
+					}
+					// Get the element with id="defaultOpen" and click on it
+					document.getElementById("defaultOpen").click();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer1">
+				<div class="footer1a">
+		            <div class="title"><p>Biography & True Stories</p></div>
+		            <div class="garis">
+			            <ul >
+			                <li><a href="#">General</a></li>
+			                <li><a href="#">Diaries, Letters & Journals</a></li>
+			                <li><a href="#">Memoirs</a></li>
+			                <li><a href="#">True Stories</a></li>
+			                <li><a href="#">Generic Exams</a></li>
+			                <li><a href="#">GK Titles</a></li>
+			                <li><a href="#">Medical Entrance</a></li>
+			                <li><a href="#">Other Entrance Exams</a></li>
+			                <li><a href="#">PG Entrance Examinations</a></li>
+			                <li><a href="#">Self-help Titles</a></li>
+			            </ul>
+		        	</div>
+		            <ul>
+		            	<li><a href="#">Sociology</a></li>
+		            </ul>
+	        	</div>
+				<div class="footer1b">
+					<div class="title"><p>Professional & Reference </p></div>
+		            <div class="garis">
+			            <ul >
+			                <li><a href="#">Academic and Reference</a></li>
+			                <li><a href="#">Business Trade</a></li>
+			                <li><a href="#">Engineering and Computer Science</a></li>
+			                <li><a href="#">Humanities, Social Sciences and Languages</a></li>
+			                <li><a href="#">Introduction to Computers</a></li>
+			                <li><a href="#">Science and Maths</a></li>
+			                <li><a href="#">Trade Business</a></li>
+			                <li><a href="#">English Language & Literature</a></li>
+			                <li><a href="#">English Language Teaching</a></li>
+			                <li><a href="#">Environment Awareness</a></li>
+			            </ul>
+		        	</div>
+		            <ul>
+		            	<li><a href="#">Environment Protection </a></li>
+		            </ul>
+				</div>
+				<div class="footer1c">
+					<div class="title"><p>Earth Sciences</p></div>
+		            <div class="garis">
+			            <ul >
+			                <li><a href="#">Earth Sciences</a></li>
+			                <li><a href="#">Geography</a></li>
+			                <li><a href="#">The Environment</a></li>
+			                <li><a href="#">Regional & Area Planning</a></li>
+			                <li><a href="#">Fantasy</a></li>
+			                <li><a href="#">Gay</a></li>
+			                <li><a href="#">Humorous</a></li>
+			                <li><a href="#">Interactive</a></li>
+			                <li><a href="#">Legal</a></li>
+			                <li><a href="#">Lesbian</a></li>
+			            </ul>
+		        	</div>
+		            <ul>
+		            	<li><a href="#">Men'S Adventure</a></li>
+		            </ul>
+				</div>
+				<div class="footer1d">
+					<div class="title"><p>Mathematics</p></div>
+		            <div class="garis">
+			            <ul >
+			                <li><a href="#">Algebra</a></li>
+			                <li><a href="#">Differential Equations</a></li>
+			                <li><a href="#">Discrete Mathematics</a></li>
+			                <li><a href="#">Fourier Analysis</a></li>
+			                <li><a href="#">Numerical Analysis</a></li>
+			                <li><a href="#">Probability</a></li>
+			                <li><a href="#">Statistical Methods/data Analysis</a></li>
+			                <li><a href="#">Stochastic And Random Processes</a></li>
+			                <li><a href="#">Topology</a></li>
+			                <li><a href="#">Statistics</a></li>
+			            </ul>
+		        	</div>
+		            <ul>
+		            	<li><a href="#">Mathematics</a></li>
+		            </ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer2">
+		<center>We accept all major Credit Card/Debit Card/Internet Banking <br>
+		<a href="#"><img src="gambar/mastercard.png"></a>
+		<a href="#"><img src="gambar/americanexpress.png"></a>
+		<a href="#"><img src="gambar/visa.png"></center></a>
+	</div>
+	<div class="footer3">
+		<center>Conditions of Use Privacy Notice &copy; 2012-2013, Booksonline, Inc. or its affiliates </center>
+	</div>
+</body>
+</html>
